@@ -7,8 +7,8 @@ import start from "../assets/start.png";
 function Sidenav() {
   return (
     <div
-      className="d-flex flex-column flex-shrink-0 bg-body-tertiary"
-      style={{ height: "100px", width: "5vw", marginTop: "-4vw" }}
+      className="d-flex flex-column  bg-body-tertiary"
+      style={{ height: "90px", width: "5vw", marginTop: "-4vw" }}
     >
       <a
         href="/"

@@ -8,8 +8,8 @@ function Navbar() {
         className="container-fluid  border-dark"
         style={{
           height: "4vw",
-          width: "100vw",
-          marginLeft: "5vw",
+          width: "100%",
+          marginLeft: "12vw",
         }}
       >
         <div className="row d-flex flex-row">
@@ -25,9 +25,10 @@ function Navbar() {
             <img
               src={girl}
               alt="girl"
-              className="h-80 w-80 object-fit-cover"
+              className="object-fit-cover"
               style={{
                 maxHeight: "4vw",
+                marginLeft: "-6vw",
               }}
             />
             <img
@@ -52,6 +53,7 @@ function Navbar() {
             className="col-sm-10 bg-light pt-2"
             style={{
               height: "5vw",
+              marginLeft: "-5vw",
             }}
           >
             {/* <div className="margin mx-5"> */}
@@ -59,8 +61,8 @@ function Navbar() {
               className="row "
               style={{
                 height: "3vw",
-                width: "30vw",
-                marginLeft: "30vw",
+                width: "40vw",
+                marginLeft: "25vw",
 
                 justifyContent: "center",
                 alignItems: "center",
@@ -107,8 +109,9 @@ function Navbar() {
             backgroundColor: "#1016B7",
             color: "white",
             width: "15vw",
-            marginTop: "1vw",
+            marginTop: "0.4vw",
             borderRadius: "2vw",
+            marginLeft: "-8vw",
           }}
         >
           Dashboard

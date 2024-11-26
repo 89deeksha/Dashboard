@@ -2,8 +2,9 @@ import { useState } from "react";
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
 import Navbar from "./component/navbar";
-import Banner from "./component/Banner";
+
 import Sidenav from "./component/Sidenav";
+import Banner from "./component/Banner";
 import "./App.css";
 
 function App() {
@@ -13,8 +14,9 @@ function App() {
     <div className="main" id="outer">
       <div className="container-fluid">
         <Navbar></Navbar>
-        {/* <Banner></Banner> */}
+
         <Sidenav></Sidenav>
+        <Banner></Banner>
       </div>
     </div>
   );
