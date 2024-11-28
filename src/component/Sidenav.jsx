@@ -1,13 +1,18 @@
 import React from "react";
 import arrowicon from "../assets/arrowicon.png";
 import sidenavgirl from "../assets/sidenavgirl.png";
-import card from "../assets/card.png";
+import { IoMdHome } from "react-icons/io";
+import { IoBarChartSharp } from "react-icons/io5";
+import { BsFolderFill } from "react-icons/bs";
+import { GoStarFill } from "react-icons/go";
+import { IoWalletOutline } from "react-icons/io5";
+
 import professionals from "../assets/professionals.png";
 import start from "../assets/start.png";
 function Sidenav() {
   return (
     <div
-      className="d-flex flex-column  bg-body-tertiary"
+      className="d-flex flex-column  "
       style={{ height: "90px", width: "5vw", marginTop: "-4vw" }}
     >
       <a
@@ -51,17 +56,36 @@ function Sidenav() {
           </a>
         </li>
         <li>
-          <a
-            href="#"
+          <div
             className="nav-link py-3 "
-            style={{ objectFit: "cover" }}
             data-bs-toggle="tooltip"
             data-bs-placement="right"
             data-bs-original-title="card"
           >
-            <img src={card} className="bi pe-none" width="24" height="100" />
-            <use xlink:href="#speedometer2"></use>
-          </a>
+            <div>
+              <IoMdHome size={24} color="black" style={{ marginTop: "2vw" }} />
+              <IoBarChartSharp
+                size={24}
+                color="black"
+                style={{ marginTop: "1vw" }}
+              />
+              <BsFolderFill
+                size={24}
+                color="black"
+                style={{ marginTop: "1vw" }}
+              />
+              <GoStarFill
+                size={24}
+                color="black"
+                style={{ marginTop: "1vw" }}
+              />
+              <IoWalletOutline
+                size={24}
+                color="black"
+                style={{ marginTop: "1vw" }}
+              />
+            </div>
+          </div>
         </li>
         <li>
           <a
