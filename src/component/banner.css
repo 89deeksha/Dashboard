@@ -1,0 +1,68 @@
+#womenone {
+  height: 3.2vw;
+  width: 3.2vw;
+  background-image: cover;
+
+  border-radius: 50%;
+  background-color: yellow;
+}
+
+#firstname {
+  height: 3vw;
+  width: 8vw;
+  font-weight: 700;
+  background-color: blueviolet;
+  color: black; /* Ensures the text is visible */
+  display: flex;
+  justify-content: center;
+  margin-right: 10px;
+  align-items: center;
+  text-align: center; /* Centers the text inside the element */
+  font-size: 1.5vw;
+}
+#graph {
+  height: 340px;
+  width: 5vw;
+  top: -2.5vw;
+  right: 0.1vw;
+  border-radius: 1px;
+  object-fit: cover;
+  position: relative;
+  transform: scale(0.7);
+  margin-right: 1vw;
+}
+#bargraph {
+  height: 450px;
+  width: 6vw;
+  top: -4vw;
+  bottom: -1vw;
+  left: 1vw;
+  border-radius: 1px;
+  object-fit: cover;
+  position: relative;
+  transform: scale(0.7);
+  margin-right: 1vw;
+}
+#customer {
+  height: 10vw;
+  width: 80%;
+}
+#Christina {
+  white-space: nowrap;
+  height: 2vw;
+  text-decoration: none;
+  width: 4vw;
+  font-size: 1vw;
+  font-weight: 700;
+  margin-left: 2vw;
+}
+#hello {
+  height: 2vw;
+  width: 10vw;
+  margin-top: 1vw;
+  color: grey;
+  font-weight: 600;
+  justify-content: left;
+  margin-left: -4vw;
+  white-space: nowrap;
+}

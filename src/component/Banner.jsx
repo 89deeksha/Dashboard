@@ -1,5 +1,12 @@
 import React from "react";
 import Cardwomen from "../assets/Cardwomen.png";
+import Womenone from "../assets/Womenone.png";
+import womentwo from "../assets/womentwo.png";
+import menthree from "../assets/menthree.png";
+import womenthree from "../assets/womenthree.png";
+import Graph from "../assets/Graph.png";
+import BarGraph from "../assets/BarGraph.png";
+import "./banner.css";
 
 function Banner() {
   return (
@@ -238,7 +245,7 @@ function Banner() {
           </div>
           <div
             className="card mb-3"
-            style={{ width: "23rem", marginTop: "1vw" }}
+            style={{ width: "25rem", marginTop: "1vw" }}
           >
             <div
               className="card-title mt-2"
@@ -276,7 +283,7 @@ function Banner() {
         <div
           className="card"
           style={{
-            height: "325px",
+            height: "320px",
             width: "38vw",
             marginTop: "3.3vw",
             marginLeft: "1vw",
@@ -310,7 +317,7 @@ function Banner() {
               style={{
                 backgroundColor: "#11146D",
                 borderRadius: "1vw",
-                height: "21vw",
+                height: "18vw",
                 width: "35vw",
 
                 marginBottom: "1vw",
@@ -445,18 +452,171 @@ function Banner() {
             <br />
           </div>
         </div>
-        <canvas
-          className="my-4 w-100
-            id=myChart"
-          style={{
-            display: "block",
-            boxsizing: "border-box",
-            height: "80px",
-            width: "190px",
-          }}
-        ></canvas>
+        {/* graph */}
+        <div className="" id="graph">
+          <img src={Graph} alt="graph" />
+        </div>
       </div>
-      <div>right</div>
+      <div>
+        {/* right */}
+
+        <div
+          className="card"
+          style={{
+            height: "325px",
+            width: "25vw",
+            marginTop: "3.3vw",
+            marginLeft: "1vw",
+          }}
+        >
+          <h6 style={{ padding: "10px", marginBottom: "15px" }}>
+            My Latest Athletes Chat
+          </h6>
+          <div
+            className="card mb-3"
+            style={{
+              maxWidth: "92%",
+              maxHeight: "49px",
+              overflow: "hidden",
+              marginLeft: "1vw",
+            }}
+          >
+            <div className="row g-0">
+              <td
+                className="align-middle customer white-space-nowrap "
+                id="customer"
+              >
+                <div className="d-flex ">
+                  <div className="avatar avatar-l">
+                    <img
+                      className="rounded-circle"
+                      id="womenone"
+                      src={Womenone}
+                      alt="womenone"
+                    />
+                  </div>
+                  <h6 className=" text-body d-flex flex-column" id="Christina">
+                    Christina Joshap
+                  </h6>
+
+                  <small className="" id="hello">
+                    Hello what's up
+                  </small>
+                </div>
+              </td>
+            </div>
+          </div>
+          {/* second */}
+          <div
+            className="card mb-3"
+            style={{
+              maxWidth: "92%",
+              maxHeight: "49px",
+              overflow: "hidden",
+              marginLeft: "1vw",
+            }}
+          >
+            <div className="row g-0">
+              <td
+                className="align-middle customer white-space-nowrap "
+                id="customer"
+              >
+                <div className="d-flex ">
+                  <div className="avatar avatar-l">
+                    <img
+                      className="rounded-circle"
+                      id="womenone"
+                      src={womentwo}
+                      alt="womentwo"
+                    />
+                  </div>
+                  <h6 className=" text-body d-flex flex-column" id="Christina">
+                    Meera Krishna tej
+                  </h6>
+
+                  <small className="" id="hello">
+                    Hello what's up
+                  </small>
+                </div>
+              </td>
+            </div>
+          </div>
+          {/* third */}
+          <div
+            className="card mb-3"
+            style={{
+              maxWidth: "92%",
+              maxHeight: "49px",
+              overflow: "hidden",
+              marginLeft: "1vw",
+            }}
+          >
+            <div className="row g-0">
+              <td
+                className="align-middle customer white-space-nowrap "
+                id="customer"
+              >
+                <div className="d-flex ">
+                  <div className="avatar avatar-l">
+                    <img
+                      className="rounded-circle"
+                      id="womenone"
+                      src={menthree}
+                      alt="menthree"
+                    />
+                  </div>
+                  <h6 className=" text-body d-flex flex-column" id="Christina">
+                    Aravindh Kihorer
+                  </h6>
+
+                  <small className="" id="hello">
+                    Hello what's up
+                  </small>
+                </div>
+              </td>
+            </div>
+          </div>
+          {/* fourth */}
+          <div
+            className="card mb-3"
+            style={{
+              maxWidth: "92%",
+              maxHeight: "49px",
+              overflow: "hidden",
+              marginLeft: "1vw",
+            }}
+          >
+            <div className="row g-0">
+              <td
+                className="align-middle customer white-space-nowrap "
+                id="customer"
+              >
+                <div className="d-flex ">
+                  <div className="avatar avatar-l">
+                    <img
+                      className="rounded-circle"
+                      id="womenone"
+                      src={womenthree}
+                      alt="womenthree"
+                    />
+                  </div>
+                  <h6 className=" text-body d-flex flex-column" id="Christina">
+                    Choraphligana ji
+                  </h6>
+
+                  <small className="" id="hello">
+                    Hello what's up
+                  </small>
+                </div>
+              </td>
+            </div>
+          </div>
+        </div>
+
+        <div className="graph" id="bargraph">
+          <img src={BarGraph} alt="bargraph" />
+        </div>
+      </div>
     </div>
   );
 }

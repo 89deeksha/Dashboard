@@ -5,7 +5,7 @@ function Navbar() {
   return (
     <>
       <div
-        className="container-fluid  border-dark"
+        className="container-fluid  "
         style={{
           height: "4vw",
           width: "100%",
@@ -50,7 +50,7 @@ function Navbar() {
             </h4>
           </div>
           <div
-            className="col-sm-10 bg-light pt-2"
+            className="col-sm-10  pt-2"
             style={{
               height: "5vw",
               marginLeft: "-5vw",
