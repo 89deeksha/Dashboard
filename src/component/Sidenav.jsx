@@ -32,6 +32,7 @@ function Sidenav() {
 
         <span className="visually-hidden">Icon-only</span>
       </a>
+
       <ul className="nav nav-pills nav-flush flex-column mb-auto text-center">
         <li className="nav-item">
           <a

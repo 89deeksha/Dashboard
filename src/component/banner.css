@@ -4,7 +4,6 @@
   background-image: cover;
 
   border-radius: 50%;
-  background-color: yellow;
 }
 
 #firstname {
@@ -65,4 +64,22 @@
   justify-content: left;
   margin-left: -4vw;
   white-space: nowrap;
+}
+#menu {
+  width: 14.5vw;
+  height: 60vw;
+  position: absolute;
+  left: 0;
+  margin-top: -6vw;
+}
+#leftarrow {
+  font-size: 2vw;
+  color: grey;
+
+  position: relative;
+  right: 4vw;
+}
+#menu-title {
+  font-size: 1vw;
+  margin-top: 0.2vw;
 }
