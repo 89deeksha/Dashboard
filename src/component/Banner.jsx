@@ -7,6 +7,16 @@ import womenthree from "../assets/womenthree.png";
 import Graph from "../assets/Graph.png";
 import BarGraph from "../assets/BarGraph.png";
 import { MdOutlineKeyboardArrowLeft } from "react-icons/md";
+import sidenavgirl from "../assets/sidenavgirl.png";
+import { AiOutlineHome } from "react-icons/ai";
+import { IoBarChartOutline } from "react-icons/io5";
+import { BsFolder } from "react-icons/bs";
+import { FaRegStar } from "react-icons/fa";
+import { IoWalletOutline } from "react-icons/io5";
+import chatgirlone from "../assets/chatgirlone.png";
+import chatboyone from "../assets/chatboyone.png";
+import chatmen from "../assets/chatmen.png";
+import start from "../assets/start.png";
 import "./banner.css";
 
 function Banner() {
@@ -635,7 +645,17 @@ function Banner() {
             <p id="menu-title">Menu</p>
           </div>
         </a>
-        <hr />
+        <div>
+          <img
+            src={sidenavgirl}
+            alt="sidenavgirl"
+            id="sidenavgirlmenu"
+            className="rounded-circle me-2 d-flex"
+          />
+          <p id="profile">Profile</p>
+        </div>
+
+        {/* <hr />
         <ul className="nav nav-pills flex-column ">
           <li className="nav-item">
             <a href="#" className="nav-link active" aria-current="page">
@@ -678,49 +698,61 @@ function Banner() {
             </a>
           </li>
         </ul>
-        <hr />
-        <div className="dropdown">
-          <a
-            href="#"
-            className="d-flex align-items-center link-body-emphasis text-decoration-none dropdown-toggle"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-          >
+        <hr /> */}
+
+        <div
+          className="nav-link  "
+          data-bs-toggle="tooltip"
+          data-bs-placement="right"
+          data-bs-original-title="card"
+        >
+          <div className="d-flex flex-column" id="leftmenuicon">
+            <AiOutlineHome />
+            <IoBarChartOutline />
+            <BsFolder />
+            <FaRegStar />
+            <IoWalletOutline />
+          </div>
+          <div>
+            <p id="chathistory">Chat history</p>
+            <div className="d-flex flex-row">
+              <img
+                src={chatgirlone}
+                alt="chatgirlone"
+                id="chatgirlone"
+                className="rounded-circle me-2 d-flex"
+              />
+              <p id="n-1">Karthryn murphy</p>
+            </div>
+          </div>
+          <div className="d-flex flex-row">
             <img
-              src="https://github.com/mdo.png"
-              alt=""
-              width="32"
-              height="32"
-              className="rounded-circle me-2"
+              src={chatboyone}
+              alt="chatboyone"
+              id="chatboyone"
+              className="rounded-circle me-2 d-flex"
             />
-            <strong>mdo</strong>
-          </a>
-          <ul className="dropdown-menu text-small shadow">
-            <li>
-              <a className="dropdown-item" href="#">
-                New project...
-              </a>
-            </li>
-            <li>
-              <a className="dropdown-item" href="#">
-                Settings
-              </a>
-            </li>
-            <li>
-              <a className="dropdown-item" href="#">
-                Profile
-              </a>
-            </li>
-            <li>
-              <hr className="dropdown-divider" />
-            </li>
-            <li>
-              <a className="dropdown-item" href="#">
-                Sign out
-              </a>
-            </li>
-          </ul>
+            <p id="n-2">Janee kuperr</p>
+          </div>
         </div>
+        <div className="d-flex flex-row">
+          <img
+            src={chatmen}
+            alt="chatmen"
+            id="chatmen"
+            className="rounded-circle me-2 d-flex"
+          />
+          <p id="n-3">Albert flores</p>
+        </div>
+        <button className="dropdown-toggle" id="btn">
+          Chats
+        </button>
+        <img
+          src={start}
+          alt="start-1"
+          id="start"
+          className="rounded-circle me-2 d-flex"
+        />
       </div>
     </div>
   );
