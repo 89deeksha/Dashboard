@@ -8,8 +8,6 @@ import Banner from "./component/Banner";
 import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <div className="main" id="outer">
       <div className="container-fluid">
