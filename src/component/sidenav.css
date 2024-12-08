@@ -1,6 +1,6 @@
 #menu_1 {
-  height: 115vh;
-  width: 15vw;
+  height: 120vh;
+  width: 14.5vw;
   background-color: rgb(233, 227, 227);
   z-index: 100;
 }
@@ -23,7 +23,7 @@
   position: absolute;
   object-fit: cover;
   margin-left: 1.5rem;
-  margin-top: 1vw;
+  margin-top: 0vw;
 }
 #profile {
   font-size: 1vw;
@@ -33,7 +33,7 @@
 #leftmenuicon {
   font-size: 2vw;
   gap: 1vw;
-  margin-left: 1.7vw;
+  margin-left: 2vw;
   margin-top: 2vw;
 }
 #chathistory {

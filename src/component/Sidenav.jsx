@@ -18,6 +18,8 @@ import { IoWalletOutline } from "react-icons/io5";
 import chatgirlone from "../assets/chatgirlone.png";
 import chatboyone from "../assets/chatboyone.png";
 import chatmen from "../assets/chatmen.png";
+// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import "./sidenav.css";
 function Sidenav() {
@@ -37,132 +39,127 @@ function Sidenav() {
       id="sidenav"
       style={{ height: "90px", width: "5vw" }}
     >
+      <div onClick={handleprofile}></div>
       {showform === false ? (
         <>
-          <div onClick={handleprofile}>
-            <img
-              src={arrowicon}
-              className="bi pe-none"
-              width="15"
-              height="15"
-              style={{ paddingLeft: "7px", maxHeight: "24px" }}
-            />
-          </div>
-          <ul className="nav nav-pills nav-flush flex-column mb-auto text-center">
-            <li className="nav-item">
-              <a
-                href="#"
-                className="nav-link  py-3 "
-                aria-current="page"
-                data-bs-toggle="tooltip"
-                data-bs-placement="right"
-                data-bs-original-title="arrow"
-              >
-                <img
-                  src={sidenavgirl}
-                  className="bi pe-none "
-                  style={{
-                    objectFit: "cover",
-                  }}
-                  width="24"
-                  height="24"
-                  role="img"
-                />
-              </a>
-            </li>
-            <li>
-              <div
-                className="nav-link py-3 "
-                data-bs-toggle="tooltip"
-                data-bs-placement="right"
-                data-bs-original-title="card"
-              >
-                <div>
-                  <IoMdHome
-                    size={24}
-                    color="black"
-                    style={{ marginTop: "2vw" }}
-                  />
-                  <IoBarChartSharp
-                    size={24}
-                    color="black"
-                    style={{ marginTop: "1vw" }}
-                  />
-                  <BsFolderFill
-                    size={24}
-                    color="black"
-                    style={{ marginTop: "1vw" }}
-                  />
-                  <GoStarFill
-                    size={24}
-                    color="black"
-                    style={{ marginTop: "1vw" }}
-                  />
-                  <IoWalletOutline
-                    size={24}
-                    color="black"
-                    style={{ marginTop: "1vw" }}
+          <div>
+            <div onClick={handleprofile}>
+              <img
+                src={arrowicon}
+                className="bi pe-none"
+                width="15"
+                height="15"
+                style={{ paddingLeft: "7px", maxHeight: "24px" }}
+              />
+            </div>
+            <ul className="nav nav-pills nav-flush flex-column mb-auto text-center">
+              <li className="nav-item">
+                <div
+                  className="nav-link  py-3 "
+                  aria-current="page"
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="right"
+                  data-bs-original-title="arrow"
+                >
+                  <img
+                    src={sidenavgirl}
+                    className="bi pe-none "
+                    style={{
+                      objectFit: "cover",
+                    }}
+                    width="24"
+                    height="24"
+                    role="img"
                   />
                 </div>
-              </div>
-            </li>
-            <li>
-              <a
-                href="#"
-                className="nav-link py-3  "
-                style={{ marginTop: "3vw" }}
-                data-bs-toggle="tooltip"
-                data-bs-placement="right"
-                aria-label="professionals"
-                data-bs-original-title="professionals"
-              >
-                <img
-                  src={professionals}
-                  className="bi pe-none "
-                  width="24"
-                  height="70"
-                  role="img"
-                  aria-label="Orders"
-                  style={{ maxHeight: "7vw" }}
-                />
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className="nav-link py-3 "
-                data-bs-toggle="tooltip"
-                data-bs-placement="right"
-                aria-label="Products"
-                data-bs-original-title="Products"
-              >
-                <img
-                  src={start}
-                  className="bi pe-none"
-                  width="24"
-                  height="24"
-                  role="img"
+              </li>
+              <li>
+                <div
+                  className="nav-link py-3 "
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="right"
+                  data-bs-original-title="card"
+                >
+                  <div>
+                    <IoMdHome
+                      size={24}
+                      color="black"
+                      style={{ marginTop: "2vw" }}
+                    />
+                    <IoBarChartSharp
+                      size={24}
+                      color="black"
+                      style={{ marginTop: "1vw" }}
+                    />
+                    <BsFolderFill
+                      size={24}
+                      color="black"
+                      style={{ marginTop: "1vw" }}
+                    />
+                    <GoStarFill
+                      size={24}
+                      color="black"
+                      style={{ marginTop: "1vw" }}
+                    />
+                    <IoWalletOutline
+                      size={24}
+                      color="black"
+                      style={{ marginTop: "1vw" }}
+                    />
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div
+                  className="nav-link py-3  "
+                  style={{ marginTop: "3vw" }}
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="right"
+                  aria-label="professionals"
+                  data-bs-original-title="professionals"
+                >
+                  <img
+                    src={professionals}
+                    className="bi pe-none "
+                    width="24"
+                    height="70"
+                    role="img"
+                    aria-label="Orders"
+                    style={{ maxHeight: "7vw" }}
+                  />
+                </div>
+              </li>
+              <li>
+                <div
+                  className="nav-link py-3 "
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="right"
                   aria-label="Products"
-                />
-              </a>
-            </li>
-          </ul>
+                  data-bs-original-title="Products"
+                >
+                  <img
+                    src={start}
+                    className="bi pe-none"
+                    width="24"
+                    height="24"
+                    role="img"
+                    aria-label="Products"
+                  />
+                </div>
+              </li>
+            </ul>
+          </div>
         </>
       ) : (
         <>
           <div className=" flex-shrink-0 " id="menu_1">
-            <a
-              href="/"
-              className="d-flex align-items-center link-body-emphasis text-decoration-none"
-            >
-              <svg className="bi pe-none me-2" width="40" height="32">
-                <use xlink:href="#bootstrap"></use>
-              </svg>
+            <div className="d-flex align-items-center link-body-emphasis text-decoration-none">
+              <svg className="bi pe-none me-2" width="40" height="32"></svg>
               <div id="leftarrow" className="ms-n3 d-flex">
                 <MdOutlineKeyboardArrowLeft onClick={handlecancel} />
                 <p id="menu-title">Menu</p>
               </div>
-            </a>
+            </div>
             <div>
               <img
                 src={sidenavgirl}
@@ -172,7 +169,6 @@ function Sidenav() {
               />
               <p id="profile">Profile</p>
             </div>
-
             <div
               className="nav-link  "
               data-bs-toggle="tooltip"
@@ -217,9 +213,18 @@ function Sidenav() {
               />
               <p id="n-3">Albert flores</p>
             </div>
-            <button className="dropdown-toggle" id="btn">
-              Chats
-            </button>
+
+            {/* <link to="/chatpage"> Chats </link> */}
+            {/* <Link to="/chatpage">chats</Link> */}
+            <Link
+              to="/chatpage"
+              style={{ textDecoration: "none", color: "inherit" }}
+            >
+              {" "}
+              <button className="dropdown-toggle" id="btn">
+                Chat
+              </button>
+            </Link>
             <div className="d-flex flex-row">
               <img
                 src={start}

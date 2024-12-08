@@ -1,3 +1,7 @@
+.parent {
+  position: relative;
+}
+
 #womenone {
   height: 3.2vw;
   width: 3.2vw;
@@ -64,4 +68,6 @@
   justify-content: left;
   margin-left: -4vw;
   white-space: nowrap;
+}
+.transaction {
 }
