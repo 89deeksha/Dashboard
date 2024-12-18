@@ -310,7 +310,7 @@ function Banner() {
           <div
             className="card"
             style={{
-              height: "320px",
+              height: "330px",
               width: "38vw",
               marginTop: "3.3vw",
               marginLeft: "1vw",
@@ -323,6 +323,7 @@ function Banner() {
                   marginLeft: "2vw",
                   fontWeight: "700",
                   marginTop: "1vw",
+                  height: "2vw",
                 }}
               >
                 Transaction history
@@ -344,10 +345,9 @@ function Banner() {
                 style={{
                   backgroundColor: "#11146D",
                   borderRadius: "1vw",
-                  height: "18vw",
+                  height: "20vw",
                   width: "35vw",
 
-                  marginBottom: "1vw",
                   marginLeft: "1vw",
                 }}
               >
@@ -361,7 +361,7 @@ function Banner() {
                     style={{
                       marginLeft: "17vw",
                       fontSize: "1.5vw",
-                      marginTop: "0.4vw",
+
                       textDecorationLine: "underline",
                     }}
                   >

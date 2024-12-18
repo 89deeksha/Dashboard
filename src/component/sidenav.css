@@ -100,5 +100,8 @@
   font-weight: 600;
 }
 #sidenav {
-  margin-top: -4.2vw;
+  margin-top: 1vw;
+}
+#btn:hover {
+  background-color: black;
 }

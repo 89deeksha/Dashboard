@@ -48,7 +48,7 @@ function Sidenav() {
                 src={arrowicon}
                 className="bi pe-none"
                 width="15"
-                height="15"
+                height="10"
                 style={{ paddingLeft: "7px", maxHeight: "24px" }}
               />
             </div>

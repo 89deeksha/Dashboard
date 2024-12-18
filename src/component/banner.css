@@ -69,5 +69,8 @@
   margin-left: -4vw;
   white-space: nowrap;
 }
-.transaction {
+@media only screen and(max-width:1107) {
+  .parent {
+    flex-wrap: wrap;
+  }
 }
